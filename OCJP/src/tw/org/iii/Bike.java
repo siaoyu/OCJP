@@ -4,7 +4,8 @@ public class Bike {
 	int a;
 	static int b;
 	static int counter;
-	private double speed;
+//	private double speed;
+	double speed;
 	Bike(){
 		this(0);
 	}
