@@ -66,18 +66,20 @@ public class TWid {
 	TWid(boolean isMale, int area){
 		char f0 = letters.charAt(area);
 		char f1 = isMale?'1':'2';
-		String temp = ""+f0+f1;
+		
+		StringBuffer sb = new StringBuffer(""+f0+f1);
 		for (int i=0; i<7;i++){
-			temp+= (int)(Math.random()*10);
+			//TODO StringBuffer後續  StringBuffer跟StringBuilder的差異, StringBuilder較快, 但對於多執行緒較不安全 
+//			sb.append(id)+= (int)(Math.random()*10);
 		}
 		for (int i=0; i<10; i++){
-			if (isCheckOK(temp+i)){
-				id= temp+i;
+//			if (isCheckOK(sb+i)){
+//				id= sb+i;
 				break;
 			}
 		}
 			
-	}
+//	}
 	
 	
 	String getid(){

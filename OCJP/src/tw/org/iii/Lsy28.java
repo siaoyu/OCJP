@@ -19,7 +19,7 @@ class Lsy282 extends Lsy281{
 	 * 沒有
 	 * private
 	 */
-//	void m1(){}	//overwrite m1方法, 基本型別要 = 父類別, 存取修飾字要 >= 父類別, 若父類別是private, 則已不是overwrite
+//	void m1(){}	//override m1方法, 基本型別要 = 父類別, 存取修飾字要 >= 父類別, 若父類別是private, 則已不是override
 	Lsy284 m1(){return new Lsy284();}
 }
 class Lsy283{}
