@@ -4,6 +4,7 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -11,6 +12,7 @@ import javax.swing.JPanel;
 
 public class MyPainter extends JPanel implements MouseListener{
 	private int x0, y0, x1, y1, x, y, w, h;
+	private MyMouseAdapter myMouseAdapter;
 	
 	public MyPainter(){
 		setBackground(Color.GREEN);
@@ -34,6 +36,8 @@ public class MyPainter extends JPanel implements MouseListener{
 		g2d.drawOval(x, y, w, h);
 		
 	}
+	
+	
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		System.out.println("Clicked");
@@ -66,5 +70,21 @@ public class MyPainter extends JPanel implements MouseListener{
 		x = x0 - r;
 		y = y0 - r;
 		repaint();
+	}
+}
+
+class MyMouseAdapter extends MouseAdapter {
+	
+	
+	@Override
+	public void mousePressed(MouseEvent e) {
+		super.mousePressed(e);
+		
+	}
+	
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		super.mouseReleased(e);
+		
 	}
 }
