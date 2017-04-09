@@ -1,3 +1,9 @@
+/* 老師的github
+ * https://github.com/bradchao/MyJava03.git
+ * https://github.com/bradchao/Java2003.git
+ */
+
+
 package tw.org.iii;
 
 public class Lsy {
